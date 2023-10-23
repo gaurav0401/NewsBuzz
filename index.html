@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Headland+One&family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>BharatBeacon</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(163, 203, 255);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-family: play;"><big><i class="fa-solid fa-newspaper"></i> BharatBeacon</big> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+          <!-- <li class="nav-item">
+            <a class="nav-link " aria-current="page" id="Home" href="#" onclick="onNav('Trending')" ><i class="fa-solid fa-house"></i> Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" id="Trending" href="#" onclick="onNav('Trending')"><i
+                class="fa-solid fa-arrow-trend-up"></i> Trending</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="India" href="#" onclick="onNav('India')"> <i
+                class="fa-solid fa-indian-rupee-sign"></i> India</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Tech" href="#" onclick="onNav('Tech')"><i class="fa-solid fa-microchip"></i>
+              Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Entertainment" href="#" onclick="onNav('Entertainment')"><i
+                class="fa-solid fa-film"></i> Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Politics" href="#" onclick="onNav('Politics')"><i
+                class="fa-solid fa-landmark-dome"></i> Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="sports" href="#" onclick="onNav('sports')"><i class="fa-solid fa-volleyball"></i>
+              Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Science" href="#" onclick="onNav('Science')"><i class="fa-solid fa-flask"></i>
+              Science </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Health" href="#" onclick="onNav('Health')"><i class="fa-solid fa-notes-medical"></i>
+              Health </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="Books" href="#" onclick="onNav('Books')"><i class="fa-solid fa-book"></i> Books </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" id="Travel" href="#" onclick="onNav('Travel')"><i class="fa-solid fa-plane"></i> Travel
+            </a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="e.g Science,Tech" aria-label="Search"
+            id="search-text" required>
+          <button class="btn " type="submit" style="background-color: black; color: white;"
+            id="search-button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+ 
+
+
+  
+
+  <main>
+
+    <div class="album py-5 bg-light">
+
+      <div class="container">
+        <h2 id="current-slug" style="font-family:playflair"> </h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="cards-container">
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+  <template id="template-news-card">
+
+
+    <div class="col ">
+      <div class="card shadow-sm ">
+        <img class="rounded-top" src="" alt="" id="news-img">
+
+        <div class="card-body" style="background-color: rgb(236, 236, 234);">
+          <h3 id="news-title">Title</h3>
+          <h6 id="news-source">Source</h6>
+          <p class="card-text" id="news-desc">Description</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm " style="background-color: rgb(51, 51, 51);"><a href=""
+                  style="color: white; text-decoration: none;" id="go-to-url">Read More <i
+                    class="fa fa-angle-double-right" style=" font-size: 12px;"></i></a> </button>
+
+
+            </div>
+          </div>
+        </div>
+
+  </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
