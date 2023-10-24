@@ -96,3 +96,8 @@ function ToggleActive(el,index) {
     }
   });
 }
+
+
+function reload(){
+  window.location.reload();
+}
