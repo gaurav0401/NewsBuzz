@@ -19,5 +19,5 @@ NewsBuzz is a news-providing website   using HTML, JavaScript and  news API whic
 
 
 ## Screenshot 4
-![image](https://github.com/gaurav0401/NewsBuzz/assets/80095859/ee0083c6-1cc8-41ae-aba9-ea941314ed25)
+![image](https://github.com/gaurav0401/NewsBuzz/assets/80095859/23649695-c59d-414a-a6cb-c16e359d0218)
 
