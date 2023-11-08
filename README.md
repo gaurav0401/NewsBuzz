@@ -1,6 +1,6 @@
 # NewsBuzz
 
-NewsBuzz is a news providing web application using news API which  provides news for various categories and we can also search news related to particular topic.
+NewsBuzz is a news-providing website   using HTML, JavaScript and  news API which  provides news for various categories and we can also search for news related to particular topics.
 
 
 ## Screenshot 1
